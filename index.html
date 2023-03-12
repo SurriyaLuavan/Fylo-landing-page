@@ -20,7 +20,7 @@
     />
     <script src="./js/script.js" defer></script>
   </head>
-  <body>
+  <body id="home">
     <header class="ff-heading fw-regular padding-block-600">
       <div class="container">
         <div class="flex-container">
@@ -40,7 +40,6 @@
     <main>
       <section
         class="intro-section ff-body fw-regular padding-block-600 padding-bottom-1000"
-        id="home"
       >
         <div class="intro-container container">
           <div class="flex-container flex-column">
@@ -114,7 +113,7 @@
           </div>
         </div>
       </section>
-      <section class="main-section padding-bottom-1000">
+      <section id="team" class="main-section padding-bottom-1000">
         <div class="container">
           <div class="flex-container flex-gap-4em flex-column">
             <img src="asserts/images/illustration-stay-productive.png" alt="" />
@@ -141,7 +140,7 @@
           </div>
         </div>
       </section>
-      <section id="team" class="testimonial-section padding-bottom-2000">
+      <section class="testimonial-section padding-bottom-2000">
         <div class="container">
           <div class="testimonial-container">
             <div class="quote-container">
@@ -214,10 +213,11 @@
                   name="email"
                   id="email"
                   placeholder="email@example.com"
+                  required
                 />
                 <div class="error">Please enter a valid address</div>
               </div>
-              <button class="btn ff-heading fw-bold">
+              <button id="submit" type="submit" class="btn ff-heading fw-bold">
                 Get Started For Free
               </button>
             </div>
@@ -227,7 +227,9 @@
     </main>
     <footer class="padding-top-2000">
       <div class="footer-container container">
-        <img class="footer-logo" src="asserts/images/logo.svg" alt="logo" />
+        <a href="#home"
+          ><img class="footer-logo" src="asserts/images/logo.svg" alt="logo"
+        /></a>
         <div class="flex-container">
           <div class="contact-container">
             <div class="location-container">

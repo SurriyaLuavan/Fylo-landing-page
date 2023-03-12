@@ -4,8 +4,6 @@
   --clr-primary-400: hsl(218, 28%, 13%);
   --clr-primary-600: hsl(216, 53%, 9%);
 
-  /* --clr-accent-cyan: hsl(176, 68%, 64%); */
-  /* --clr-accent-blue: hsl(198, 60%, 50%); */
   --clr-accent-cyan: #94dbe2;
   --clr-accent-blue: #54b6cf;
   --clr-accent-red: hsl(0, 100%, 63%);
@@ -48,8 +46,8 @@
   --size-700: 3rem;
   --size-800: 4rem;
   --size-900: 8rem;
-  --size-950: 8rem;
-  --size-1000: 17rem;
+  --size-950: 10rem;
+  --size-1000: 15rem;
   --size-2000: 22rem;
 }
 
@@ -78,7 +76,7 @@ li > a {
 }
 
 /* Set core root defaults */
-html:focus-within {
+html {
   scroll-behavior: smooth;
 }
 
@@ -181,7 +179,7 @@ svg {
 }
 
 .padding-bottom-1000 {
-  padding-bottom: var(--size-950);
+  padding-bottom: var(--size-900);
 }
 
 .padding-top-2000 {
@@ -210,7 +208,7 @@ body {
   }
 
   .padding-bottom-1000 {
-    padding-bottom: var(--size-1000);
+    padding-bottom: var(--size-950);
   }
 }
 
@@ -294,6 +292,8 @@ nav a:focus-visible {
 }
 
 /* main */
+
+/* intro section */
 .intro-section {
   background: no-repeat url(../asserts/images/bg-curvy-mobile.svg),
     linear-gradient(
@@ -357,8 +357,11 @@ nav a:focus-visible {
   }
 }
 
+/* features section */
+
 .features-section {
   background-color: var(--clr-primary-400);
+  padding-top: 2rem;
 }
 
 .features-section > .container {
@@ -375,6 +378,8 @@ nav a:focus-visible {
   width: min(100%, 350px);
   text-align: center;
 }
+
+/* main section */
 
 .main-section {
   background-color: var(--clr-primary-400);
@@ -427,8 +432,11 @@ a > img {
   }
 }
 
+/* testimonial section */
+
 .testimonial-section {
   background-color: var(--clr-primary-400);
+  padding-top: 2rem;
 }
 
 .testimonial-section > .container {
@@ -485,6 +493,8 @@ a > img {
   }
 }
 
+/* email signup section */
+
 main {
   position: relative;
 }
@@ -523,10 +533,15 @@ main {
 
 .error {
   position: absolute;
+  display: none;
   font-size: var(--fs-250);
   bottom: -20px;
   left: 25px;
   color: var(--clr-accent-red);
+}
+
+.visible {
+  display: block;
 }
 
 .email-signup-container h1 {
@@ -597,6 +612,8 @@ input {
     --size-2000: 18rem;
   }
 }
+
+/* footer section */
 
 footer {
   background-color: var(--clr-primary-600);
@@ -692,6 +709,10 @@ a:focus-visible {
   max-width: 400px;
 }
 
+.footer-logo {
+  width: 150px;
+}
+
 @media (min-width: 50em) {
   .footer-logo {
     width: 100px;
@@ -725,6 +746,8 @@ a:focus-visible {
     align-self: flex-start;
   }
 }
+
+/* credits and contributor section */
 
 .contribution-container {
   margin-inline: auto;
