@@ -445,7 +445,7 @@ a > img {
 
 .testimonial-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 350px));
   gap: 2rem;
   place-content: center;
   place-items: center;
@@ -453,9 +453,8 @@ a > img {
 
 .testi-container {
   background-color: var(--clr-primary-100);
-
   padding: 2em 1.5em;
-  border-radius: 0.2em;
+  border-radius: 0.3em;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -713,7 +712,15 @@ a:focus-visible {
   width: 150px;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 65em) {
+  .footer-container > .flex-container > .contact-container {
+    flex-direction: row;
+    gap: 6rem;
+    flex: 4;
+  }
+}
+
+@media (min-width: 55em) {
   .footer-logo {
     width: 100px;
   }
@@ -729,12 +736,6 @@ a:focus-visible {
 
   .footer-container > .flex-container > .sec-nav-section {
     flex: 2;
-  }
-
-  .footer-container > .flex-container > .contact-container {
-    flex-direction: row;
-    gap: 6rem;
-    flex: 4;
   }
 
   .seconday-nav {
